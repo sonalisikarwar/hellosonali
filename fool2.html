@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>website</title>
+<style>
+    .mySlides {display:none;}
+    *{
+    margin: 0;
+    padding: 0;
+     font-family: century gothic;
+}
+    
+
+
+    ul{
+        float:  right;
+        list-style-type: none;
+        margin-top: 25px;
+}
+
+ul li{
+       display:inline-block;
+}
+ul li a{
+      text-decoration: none;
+       color: #fff;
+       padding: 5px  20px;
+       border: 1px solid  transparent;
+       transition: o.6 ease;
+}
+ul li a:hover{
+          background-color: #fff;
+           color:  #000;
+}
+ul li.active a{
+          background-color: #fff;
+           color: #000;
+}
+.logo img{
+        float: left;
+        width: 150px;
+        height: auto; 
+}
+ .main{
+          max-width: 1200px;
+           margin: auto;
+}
+
+.title{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+}
+
+.title h1{
+        color: #fff;
+         font-size: 70px;
+}
+
+.button{
+        position: absolute;
+      top: 62%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+}
+
+.btn{
+      border: 1px solid  #fff;
+       padding:  10px 30px;
+      color: #fff;
+      text-decoration:  none;
+       transition: 0.6s ease;
+}
+
+.btn:hover{
+          background-color: #fff;
+           color:  #000;  
+} 
+img{
+    width:500px;
+    height:550px;
+    float:center;
+    margin-right: 50px;
+    margin-left: 300px; 
+    margin-top: 50px;
+    margin-bottom: 50px; 
+}
+div.gallery{
+  color: white;
+  text-shadow: 2px 2px 3px black, 0 0 25px red, 0 0 5px rgba(139, 0, 0, 0.904);
+  font-size:40pt;
+}
+    </style>
+
+</head>
+<body bgcolor ="black" text="#fff" >
+<header>
+
+<div>
+<ul>
+<li class="active"><a href="C:\Users\sapna\Desktop\html css\fool.html">home</a></li>
+<li><a href="C:\Users\sapna\Desktop\html css\fool2.html">gallery</a></li>
+<li><a href="C:\Users\sapna\Desktop\html css\fool3.html">services</a></li>
+<li><a href="C:\Users\sapna\Desktop\html css\FOOL4.HTML">about </a></li>
+</ul>
+</div>
+<center>
+<div class="gallery">
+<h1>GALLERY!</h1>
+</div>
+<hr color="white">
+</center>
+<div class="img" style="max-width:500px">
+    <img class="mySlides" src="C:\Users\sapna\Desktop\sona\18.jpg" style="width:175%">
+    <img class="mySlides" src="C:\Users\sapna\Desktop\sona\17.jpg" style="width:175%">
+    <img class="mySlides" src="C:\Users\sapna\Desktop\sona\16.JPG" style="width:175%">
+
+ </div>
+
+ <div id="mydiv"></div>
+
+  <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); // Change image every 5 seconds
+    }
+    </script>
+  
+
+
+
+
+</header>
+</body>
+</html>
+
